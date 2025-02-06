@@ -23,6 +23,7 @@ export default {
           100:'#BBD51A',
           200: '#26683C',
           300: '#6F6F6F',
+          400: '#EFEFEF',
         }
       },
       lineHeight: {
@@ -31,7 +32,6 @@ export default {
 
       backgroundImage: {
         'home-image': "url('/Component 5.png')",
-        'suit': "url('/suit.png')",
       },
 
       height:{

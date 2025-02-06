@@ -17,22 +17,22 @@ const Header = () => {
 
         {/* First Div - Navigation Links */}
         <div className="flex items-center space-x-6  md:flex">
-              <Link href="/" className="text-xs">HOME</Link>
-              <Link href="/about" className="text-xs">ABOUT US</Link>
+          <Link href="/" className="text-xs">HOME</Link>
+          <Link href="/about" className="text-xs">ABOUT US</Link>
 
-              {/* Shop Dropdown */}
-              <div className="relative">
-                <button onClick={() => setDropdownOpen(!dropdownOpen)} className="text-xs flex gap-1"> SHOP <IoChevronDown /></button>
-                 {dropdownOpen && (
-                    <div className="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded-md shadow-lg">
-                           <Link href="/shop/collection" className="block px-4 py-2">Collection</Link>
-                           <Link href="/shop/category" className="block px-4 py-2">Category</Link>
+          {/* Shop Dropdown */}
+          <div className="relative">
+            <button onClick={() => setDropdownOpen(!dropdownOpen)} className="text-xs flex gap-1"> SHOP <IoChevronDown /></button>
+            {dropdownOpen && (
+              <div className="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded-md shadow-lg">
+                      <Link href="/shop/collection" className="block px-4 py-2 hover:border-b-4 hover: border-black">Collection</Link>
+                      <Link href="/shopComponent/category" className="block px-4 py-2 hover:border-b-4 hover:border-black">Category</Link>
           
-                    </div>
-                )}
               </div>
+             )}
+          </div>
 
-             <Link href="/contact" className="text-xs">CONTACT</Link>
+          <Link href="/contact" className="text-xs">CONTACT</Link>
         </div>
 
         {/* Second Div - Logo */}

@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
@@ -35,7 +36,7 @@ const Navicons = () => {
   return (
     <div className="flex items-center space-x-6  md:flex relative">
       
-      <img src="/profile.png" alt="Persona Icon" className="h-6 w-6 cursor-pointer" onClick={() => setIsProfileOpen(!isProfileOpen)}/>
+      <Image src="/profile.png" alt="Persona Icon" width={24} height={24} className="cursor-pointer" onClick={() => setIsProfileOpen(!isProfileOpen)}/>
         {isProfileOpen &&(
           <div>
             <ul className='absolute left-0 mt-2 p-4 w-48 bg-white text-gray-900 rounded-md shadow-lg'>
@@ -46,7 +47,7 @@ const Navicons = () => {
           </div>          
         )}
 
-      <img src="/like.png" alt="like Icon" className="h-6 w-6 cursor-pointer" onClick={() => setIsWishlistOpen(!isWishlistOpen)}/>
+      <Image src="/like.png" alt="like Icon" width={24} height={24} className="cursor-pointer" onClick={() => setIsWishlistOpen(!isWishlistOpen)}/>
         {isWishlistOpen &&(
           <div>
             <ul className='absolute left-0 mt-2 p-4 w-48 bg-white text-gray-900 rounded-md shadow-lg'>
@@ -57,7 +58,7 @@ const Navicons = () => {
           </div>          
       )}
 
-      <img src="/search.png" alt="search Icon" className="h-6 w-6 cursor-pointer" onClick={() => setIsSearchOpen(!isSearchOpen)}/>
+      <Image src="/search.png" alt="search Icon" width={24} height={24} className="cursor-pointer" onClick={() => setIsSearchOpen(!isSearchOpen)}/>
         {isSearchOpen &&(
           <div className='absolute left-0 mt-2 p-4 w-48 bg-white text-gray-900 rounded-md shadow-lg'>
             <form className='flex justify-center items-center gap-4 p-2 rounded-md flex-1' onSubmit={handleSubmit}>
@@ -69,7 +70,7 @@ const Navicons = () => {
           </div>          
       )} 
 
-      <img src="/cart.png" alt="cart Icon" className="h-6 w-6 cursor-pointer" onClick={() => setIsProfileOpen(!isProfileOpen)}/>
+      <Image src="/cart.png" alt="cart Icon" width={24} height={24} className="cursor-pointer" onClick={() => setIsProfileOpen(!isProfileOpen)}/>
         {isProfileOpen &&(
           <div>
             <ul className='absolute left-0 mt-2 p-4 w-48 bg-white text-gray-900 rounded-md shadow-lg'>
