@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
@@ -41,8 +42,8 @@ const Navicons = () => {
           <div>
             <ul className='absolute left-0 mt-2 p-4 w-48 bg-white text-gray-900 rounded-md shadow-lg'>
               <li className='cursor-pointer' onClick={handleProfile}>PROFILE</li>
-              <li className='mt-2 cursor-pointer'>SIGNUP</li>
-              <li className='mt-2 cursor-pointer'>LOGIN</li>
+              <Link href="/auth/signup" className='mt-2 cursor-pointer'>SIGNUP</Link>
+              <Link href="/auth/login" className='mt-2 cursor-pointer'>LOGIN</Link>
             </ul>
           </div>          
         )}

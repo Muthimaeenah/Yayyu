@@ -17,7 +17,7 @@ const Footer = () => {
         <ul className='list-none font-medium cursor-pointer flex flex-col'>
           <li className=''>QUICK LINK</li>
           <Link href="/" className="pt-3">Home</Link>
-          <Link href="/categories" className="pt-2">Categories</Link>
+          <Link href="/shopComponent/category" className="pt-2">Categories</Link>
           <Link href="/about" className="pt-2">About Us</Link>
           <Link href="/contact" className="pt-2">Contact</Link>
           <Link href="/legal/faq" className="pt-2">FAQs</Link>

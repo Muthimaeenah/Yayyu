@@ -25,7 +25,7 @@ const Header = () => {
             <button onClick={() => setDropdownOpen(!dropdownOpen)} className="text-xs flex gap-1"> SHOP <IoChevronDown /></button>
             {dropdownOpen && (
               <div className="absolute left-0 mt-2 w-48 bg-white text-gray-900 rounded-md shadow-lg">
-                      <Link href="/shop/collection" className="block px-4 py-2 hover:border-b-4 hover: border-black">Collection</Link>
+                      <Link href="/shopComponent/collection" className="block px-4 py-2 hover:border-b-4 hover: border-black">Collection</Link>
                       <Link href="/shopComponent/category" className="block px-4 py-2 hover:border-b-4 hover:border-black">Category</Link>
           
               </div>

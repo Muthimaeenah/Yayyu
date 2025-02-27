@@ -24,6 +24,8 @@ export default {
           200: '#26683C',
           300: '#6F6F6F',
           400: '#EFEFEF',
+          500: '#F7F7F7',
+          600: '#46CDEF',
         }
       },
       lineHeight: {
